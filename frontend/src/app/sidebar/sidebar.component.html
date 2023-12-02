@@ -1,0 +1,9 @@
+<!-- sidebar.component.html -->
+
+<div  class="sidebar">
+  <button class="btn btn-dark mb-5" (click)="navigateTo('dashboard')">Dashboard</button>
+  <button class="btn btn-dark  mb-5" (click)="navigateTo('datatable')">DataTable</button>
+  <button class="btn btn-dark mb-5" (click)="navigateTo('fileupload')">File Upload</button>
+  <button *ngIf="authService.authState.isAuthenticated" class="btn btn-danger" (click)="logout()">Logout</button>
+</div>
+
